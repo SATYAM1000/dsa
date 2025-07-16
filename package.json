@@ -1,0 +1,19 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "type:check": "tsc --noEmit",
+    "type:check:watch": "tsc --noEmit --watch",
+    "build": "tsc -p tsconfig.dsa.json",
+    "build:run": "npm run build && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.0.14"
+  }
+}
