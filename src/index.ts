@@ -1,10 +1,3 @@
-console.log("hello world");
-
-function add(a: number, b: number) {
-  return a + b;
+function returnFirstElement<T>(myArray: T[]): T | null {
+  return myArray.length > 0 ? myArray[0] : null;
 }
-
-
-const res = add(1, 2);
-
-console.log("res is ", res);
